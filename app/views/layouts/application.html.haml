@@ -23,5 +23,7 @@
     .row
       .large-12.columns
         = yield
+        %p.notice= notice unless notice.blank?
+        %alert=alert unless alert.blank?
 
         = javascript_include_tag "application"
