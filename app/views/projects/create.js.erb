@@ -1,4 +1,4 @@
 (function () {
-  var projectHtml = "<%= j render(partial: 'project', locals: { project: @project }) %>";
+  var projectHtml = "<%= j render(partial: 'project', object: @project ) %>";
   $('.projects').prepend(projectHtml);
 })();
